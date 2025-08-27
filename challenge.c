@@ -106,7 +106,7 @@ typedef struct {
 typedef enum error_t {
     SUCCESS = 0,
     FAIL = 1
-};
+}
 
 //-------------------------------------------------------------------------
 // Question 8
