@@ -45,7 +45,7 @@ int q2Array[Q2_ARRAY_SIZE];
 uint16_t q3(uint8_t x, uint8_t y) {
     int leastBit = 0x01 & x;
     int mostBit = (x >> 7) & 0x01;
-    x = x & 01111110;
+    x = x & 0b01111110;
     x |= (mostBit << 0);
     x |= (leastBit << 7);
     return ((uint16_t)x << 8) | y;
