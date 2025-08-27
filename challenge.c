@@ -59,7 +59,7 @@ uint16_t q3(uint8_t x, uint8_t y) {
 // Note: The array contains 8-bit unsigned integers.
 //-------------------------------------------------------------------------
 int32_t q4(uint8_t * array, uint32_t arrayLength) {
-    if (arrayLength <= 0 || array == NULL) { return -1; }
+    if (arrayLength < 0 || array == NULL) { return -1; }
     int32_t sum = 0;
     for (uint32_t i = 0; i < arrayLength; i++) {
         sum += array[i];
